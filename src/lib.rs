@@ -21,6 +21,7 @@ impl TreeNode {
     }
 }
 
+mod design_hash_set;
 mod inorder_traversal;
 mod is_same_tree;
 mod is_symmetric;
