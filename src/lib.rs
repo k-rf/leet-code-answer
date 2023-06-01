@@ -28,6 +28,7 @@ mod is_same_tree;
 mod is_symmetric;
 mod kth_largest;
 mod max_depth;
+mod min_depth;
 mod parking_system;
 mod sorted_array_to_bst;
 mod top_k_frequent;
