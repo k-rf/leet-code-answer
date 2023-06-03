@@ -26,6 +26,7 @@ mod is_balanced;
 mod is_same_tree;
 mod is_symmetric;
 mod kth_largest;
+mod majority_element;
 mod max_depth;
 mod min_depth;
 mod parking_system;
