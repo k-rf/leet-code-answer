@@ -30,5 +30,6 @@ mod majority_element;
 mod max_depth;
 mod min_depth;
 mod parking_system;
+mod pascal_triangle;
 mod sorted_array_to_bst;
 mod top_k_frequent;
