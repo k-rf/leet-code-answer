@@ -19,6 +19,7 @@ impl TreeNode {
     }
 }
 
+mod check_straight_line;
 mod design_hash_set;
 mod has_path_sum;
 mod inorder_traversal;
