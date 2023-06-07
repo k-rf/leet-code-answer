@@ -31,6 +31,7 @@ mod kth_largest;
 mod majority_element;
 mod max_depth;
 mod min_depth;
+mod min_flips;
 mod parking_system;
 mod pascal_triangle;
 mod sorted_array_to_bst;
