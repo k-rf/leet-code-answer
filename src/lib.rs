@@ -33,6 +33,7 @@ mod majority_element;
 mod max_depth;
 mod min_depth;
 mod min_flips;
+mod next_greatest_letter;
 mod parking_system;
 mod pascal_triangle;
 mod sorted_array_to_bst;
