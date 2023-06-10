@@ -31,6 +31,7 @@ mod is_symmetric;
 mod kth_largest;
 mod majority_element;
 mod max_depth;
+mod max_value;
 mod min_depth;
 mod min_flips;
 mod next_greatest_letter;
