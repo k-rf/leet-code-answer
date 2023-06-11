@@ -1,48 +1,46 @@
-use std::collections::LinkedList;
+use std::collections::HashMap;
 
+#[derive(Debug)]
 struct SnapshotArray {
     gen: i32,
-    val: Vec<LinkedList<Option<i32>>>,
+    snap: Vec<HashMap<i32, i32>>,
 }
 
 impl SnapshotArray {
     fn new(length: i32) -> Self {
         SnapshotArray {
             gen: 0,
-            val: vec![LinkedList::from([None]); length as usize],
+            snap: vec![HashMap::new(); length as usize],
         }
     }
 
     fn set(&mut self, index: i32, val: i32) {
-        let snap = &mut self.val[index as usize];
-
-        if let Some(last) = snap.iter_mut().last() {
-            *last = Some(val);
-        } else {
-            snap.push_back(Some(val));
-        }
+        self.snap[index as usize].insert(self.gen, val);
     }
 
     fn snap(&mut self) -> i32 {
-        for elm in self.val.iter_mut() {
-            if !(*elm).is_empty() {
-                (*elm).push_back(*(*elm).iter().last().unwrap());
-            }
-        }
-
-        let gen = self.gen;
-        self.gen += 1;
-        return gen;
+        return self.next_gen();
     }
 
     fn get(&self, index: i32, snap_id: i32) -> i32 {
-        let mut target = self.val[index as usize].iter();
-        let mut ans = target.next();
+        let target = &self.snap[index as usize];
 
-        for _ in 0..snap_id {
-            ans = target.next();
+        if let Some(snap) = target.get(&snap_id) {
+            return *snap;
+        } else {
+            for i in 1..snap_id + 1 {
+                if let Some(res) = target.get(&(snap_id - i)) {
+                    return *res;
+                }
+            }
+            return 0;
         }
+    }
 
-        ans.unwrap().unwrap_or(0)
+    fn next_gen(&mut self) -> i32 {
+        let gen = self.gen;
+        self.gen += 1;
+
+        gen
     }
 }
