@@ -37,5 +37,6 @@ mod min_flips;
 mod next_greatest_letter;
 mod parking_system;
 mod pascal_triangle;
+mod snapshot_array;
 mod sorted_array_to_bst;
 mod top_k_frequent;
