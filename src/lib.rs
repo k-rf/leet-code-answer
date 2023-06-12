@@ -39,4 +39,5 @@ mod parking_system;
 mod pascal_triangle;
 mod snapshot_array;
 mod sorted_array_to_bst;
+mod summary_ranges;
 mod top_k_frequent;
