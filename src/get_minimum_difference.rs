@@ -10,13 +10,11 @@ impl Solution {
         let mut flattened = Self::flatten(root);
         flattened.sort();
 
-        let mut ans = i32::MAX;
-
-        for i in 1..flattened.len() {
-            ans = ans.min(flattened[i] - flattened[i - 1]);
-        }
-
-        ans
+        flattened
+            .windows(2)
+            .map(|x| (x[0] - x[1]).abs())
+            .min()
+            .unwrap()
     }
 
     fn flatten(node: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
