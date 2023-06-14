@@ -24,6 +24,7 @@ mod check_straight_line;
 mod count_negatives;
 mod design_hash_set;
 mod equal_pairs;
+mod get_minimum_difference;
 mod has_path_sum;
 mod inorder_traversal;
 mod is_balanced;
