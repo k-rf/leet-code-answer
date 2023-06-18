@@ -35,6 +35,7 @@ mod kth_largest;
 mod majority_element;
 mod max_depth;
 mod max_level_sum;
+mod max_profit;
 mod max_value;
 mod min_depth;
 mod min_flips;
