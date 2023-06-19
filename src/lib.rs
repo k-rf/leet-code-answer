@@ -32,6 +32,7 @@ mod is_balanced;
 mod is_same_tree;
 mod is_symmetric;
 mod kth_largest;
+mod largest_altitude;
 mod majority_element;
 mod max_depth;
 mod max_level_sum;
