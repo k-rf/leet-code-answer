@@ -24,6 +24,7 @@ mod check_straight_line;
 mod count_negatives;
 mod design_hash_set;
 mod equal_pairs;
+mod get_averages;
 mod get_minimum_difference;
 mod get_row;
 mod has_path_sum;
