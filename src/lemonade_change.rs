@@ -4,7 +4,7 @@ struct Solution;
 
 impl Solution {
     pub fn lemonade_change(bills: Vec<i32>) -> bool {
-        let mut revenue = HashMap::from([(5, 0), (10, 0), (20, 0)]);
+        let mut revenue = HashMap::from([(5, 0), (10, 0)]);
 
         for bill in bills {
             match bill {
@@ -16,8 +16,6 @@ impl Solution {
                     revenue.entry(5).and_modify(|c| *c -= 1);
                 }
                 20 => {
-                    revenue.entry(20).and_modify(|c| *c += 1);
-
                     let b10 = revenue.get_mut(&10).unwrap();
                     if 0 < *b10 {
                         *b10 -= 1;
