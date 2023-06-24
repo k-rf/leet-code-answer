@@ -52,3 +52,4 @@ mod snapshot_array;
 mod sorted_array_to_bst;
 mod summary_ranges;
 mod top_k_frequent;
+mod word_pattern;
