@@ -46,6 +46,7 @@ mod max_value;
 mod min_depth;
 mod min_flips;
 mod next_greatest_letter;
+mod ordered_stream;
 mod parking_system;
 mod pascal_triangle;
 mod single_number;
