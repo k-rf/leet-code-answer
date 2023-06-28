@@ -34,6 +34,7 @@ mod inorder_traversal;
 mod is_balanced;
 mod is_palindrome;
 mod is_power_of_four;
+mod is_power_of_three;
 mod is_same_tree;
 mod is_symmetric;
 mod kth_largest;
