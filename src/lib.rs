@@ -54,6 +54,7 @@ mod pascal_triangle;
 mod single_number;
 mod snapshot_array;
 mod sorted_array_to_bst;
+mod sum_of_left_leaves;
 mod summary_ranges;
 mod top_k_frequent;
 mod word_pattern;
