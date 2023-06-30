@@ -22,6 +22,7 @@ impl TreeNode {
 mod can_make_arithmetic_progression;
 mod check_straight_line;
 mod contains_duplicate;
+mod count_bits;
 mod count_negatives;
 mod design_hash_set;
 mod equal_pairs;
