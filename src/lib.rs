@@ -27,6 +27,7 @@ mod count_negatives;
 mod design_hash_set;
 mod equal_pairs;
 mod find_error_nums;
+mod fizz_buzz;
 mod get_averages;
 mod get_minimum_difference;
 mod get_row;
