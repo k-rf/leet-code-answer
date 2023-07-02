@@ -19,6 +19,7 @@ impl TreeNode {
     }
 }
 
+mod is_power_of_two;
 mod can_make_arithmetic_progression;
 mod check_straight_line;
 mod contains_duplicate;
