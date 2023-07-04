@@ -56,6 +56,7 @@ mod ordered_stream;
 mod parking_system;
 mod pascal_triangle;
 mod single_number;
+mod single_number2;
 mod snapshot_array;
 mod sorted_array_to_bst;
 mod sum_of_left_leaves;
