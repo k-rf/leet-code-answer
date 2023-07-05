@@ -1,6 +1,20 @@
 {
   "version": "0.2",
-  "gitignoreRoot": [".."],
-  "ignorePaths": [".devcontainer"],
-  "words": ["clippy", "commandhistory", "devcontainer", "inorder", "nums", "reqwest", "tada", "textlint"]
+  "gitignoreRoot": [
+    ".."
+  ],
+  "ignorePaths": [
+    ".devcontainer"
+  ],
+  "words": [
+    "clippy",
+    "commandhistory",
+    "devcontainer",
+    "inorder",
+    "nums",
+    "reqwest",
+    "subarray",
+    "tada",
+    "textlint"
+  ]
 }
