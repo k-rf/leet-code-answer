@@ -56,6 +56,7 @@ mod next_greatest_letter;
 mod ordered_stream;
 mod parking_system;
 mod pascal_triangle;
+mod restore_string;
 mod single_number;
 mod single_number2;
 mod snapshot_array;
