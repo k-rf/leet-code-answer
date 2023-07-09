@@ -64,5 +64,6 @@ mod snapshot_array;
 mod sorted_array_to_bst;
 mod sum_of_left_leaves;
 mod summary_ranges;
+mod to_hex;
 mod top_k_frequent;
 mod word_pattern;
