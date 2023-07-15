@@ -7,6 +7,7 @@
     ".devcontainer"
   ],
   "words": [
+    "asdfghjkl",
     "clippy",
     "commandhistory",
     "devcontainer",
@@ -14,9 +15,11 @@
     "inorder",
     "leetcode",
     "nums",
+    "qwertyuiop",
     "reqwest",
     "subarray",
     "tada",
-    "textlint"
+    "textlint",
+    "zxcvbnm"
   ]
 }
