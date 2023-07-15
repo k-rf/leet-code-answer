@@ -1,37 +1,22 @@
+use std::collections::HashSet;
+
 struct Solution {}
 
 impl Solution {
     pub fn find_words(words: Vec<String>) -> Vec<String> {
-        let rows = vec![
-            "qwertyuiop".to_string(),
-            "asdfghjkl".to_string(),
-            "zxcvbnm".to_string(),
+        let rows: Vec<HashSet<char>> = vec![
+            "qwertyuiop".chars().collect(),
+            "asdfghjkl".chars().collect(),
+            "zxcvbnm".chars().collect(),
         ];
 
-        let mut ans = vec![];
-        for word in words.iter() {
-            for row in rows.iter() {
-                let lower_word = word.to_lowercase();
-
-                let row = row.chars().collect::<Vec<_>>();
-                let lower_word = lower_word.chars().collect::<Vec<_>>();
-
-                if let Some(_) = row.iter().find(|&&x| x == lower_word[0]) {
-                    let mut skip = false;
-                    for c in lower_word.iter() {
-                        if !row.contains(c) {
-                            skip = true;
-                            break;
-                        }
-                    }
-                    if !skip {
-                        ans.push(word.clone());
-                    }
-                }
-            }
-        }
-
-        ans
+        words
+            .into_iter()
+            .filter(|word| {
+                let c: HashSet<char> = word.to_lowercase().chars().collect();
+                rows.iter().any(|row| c.is_subset(row))
+            })
+            .collect()
     }
 }
 
